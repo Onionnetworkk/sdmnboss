@@ -39,19 +39,19 @@ if(!isBanned($userId) && !isMuted($userId)){
     addUser($userId);
     bot('sendmessage',[
         'chat_id'=>$chat_id,
-        'text'=>"<b>Hello @$username,
+        'text'=>"<b>Salam @$username,
 
-Type /cmds to know all my commands!</b>
+Type /cmds yaz ve komutlari gor!</b>
 
 $messagesec",
 	'parse_mode'=>'html',
 	'reply_to_message_id'=> $message_id,
     'reply_markup'=>json_encode(['inline_keyboard' => [
         [
-          ['text' => "💠 Created By 💠", 'url' => "t.me/ninjanaveen"]
+          ['text' => "💠 Created By 💠", 'url' => "t.me/Bossnetworkk"]
         ],
         [
-          ['text' => "💎 Source Code 💎", 'url' => "t.me/IndianBotsChat"]
+          ['text' => "💎 join 💎", 'url' => "t.me/Darkwebazerbaijan"]
         ],
       ], 'resize_keyboard' => true])
         
@@ -66,7 +66,7 @@ if(strpos($message, "/cmds") === 0 || strpos($message, "!cmds") === 0){
   if(!isBanned($userId) && !isMuted($userId)){
     bot('sendmessage',[
     'chat_id'=>$chat_id,
-    'text'=>"<b>Which commands would you like to check?</b>",
+    'text'=>"<b>Hansi komutla yoxlamaq isterdin ?</b>",
     'parse_mode'=>'html',
     'reply_to_message_id'=> $message_id,
     'reply_markup'=>json_encode(['inline_keyboard'=>[
@@ -81,7 +81,7 @@ if(strpos($message, "/cmds") === 0 || strpos($message, "!cmds") === 0){
     bot('editMessageText',[
     'chat_id'=>$callbackchatid,
     'message_id'=>$callbackmessageid,
-    'text'=>"<b>Which commands would you like to check?</b>",
+    'text'=>"<b>Hansi komutla yoxlamaq isterdin ?</b>",
     'parse_mode'=>'html',
     'reply_markup'=>json_encode(['inline_keyboard'=>[
     [['text'=>"💳 CC Checker Gates",'callback_data'=>"checkergates"]],[['text'=>"🛠 Other Commands",'callback_data'=>"othercmds"]],
@@ -99,10 +99,10 @@ if(strpos($message, "/cmds") === 0 || strpos($message, "!cmds") === 0){
 <b>/sm | !sm - Stripe [Merchant]</b>
 <b>/schk | !schk - User Stripe Merchant [Needs SK]</b>
 
-<b>/apikey sk_live_xxx - Add SK Key for /schk gate</b>
-<b>/myapikey | !myapikey - View the added SK Key for /schk gate</b>
+<b>/apikey sk_live_xxx - Bu komut ucun sk elave et /schk gate</b>
+<b>/myapikey | !myapikey - elave etdiyin sk gormek ucun /schk gate</b>
 
-<b>ϟ Join <a href='t.me/IndianBots'>IndianBots</a></b>",
+<b>ϟ Join <a href='t.me/Bossnetworkk'>Contact admin</a></b>",
     'parse_mode'=>'html',
     'disable_web_page_preview'=>true,
     'reply_markup'=>json_encode(['inline_keyboard'=>[
@@ -118,13 +118,13 @@ if(strpos($message, "/cmds") === 0 || strpos($message, "!cmds") === 0){
     'message_id'=>$callbackmessageid,
     'text'=>"<b>━━Other Commands━━</b>
   
-<b>/me | !me</b> - Your Info
+<b>/me | !me</b> - sizin Info
 <b>/stats | !stats</b> - Checker Stats
 <b>/key | !key</b> - SK Key Checker
 <b>/bin | !bin</b> - Bin Lookup
 <b>/iban | !iban</b> - IBAN Checker
   
-  <b>ϟ Join <a href='t.me/IndianBots'>IndianBots</a></b>",
+  <b>ϟ Join <a href='t.me/Bossnetworkk'>Contact admin</a></b>",
     'parse_mode'=>'html',
     'disable_web_page_preview'=>true,
     'reply_markup'=>json_encode(['inline_keyboard'=>[
